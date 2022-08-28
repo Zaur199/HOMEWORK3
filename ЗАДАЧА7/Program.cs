@@ -1,15 +1,14 @@
 ﻿// Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму положительных/отрицательных элементов массива
 int[]array = {0, 9, 9, 0, 0, 0, 9, 9, 0, 9, 0, 9};
-int index = 0;
 int sum = 0;
 
-while(index <= array.Length)
+for(int i = 0; i < array.Length; i++)
 {
-    if(index > 0)
+    if(array[i] > 0)
     {
-        sum = sum + array[index];
-        index++;
+        sum = sum + array[i];
+        
     }
-}
-
- Console.Write("Сумма положительных чисел в массиве равна: " + sum);
+ 
+} 
+Console.Write("Сумма положительных чисел в массиве равна: " + sum);  
